@@ -1,8 +1,13 @@
 This file is to gather short cuts within Sublime. 
 
-Grab Package Control
+Grab Package Control:
 Command Shift P
 
-Search Current Folders
+Search Current Folders:
 Command P 
+
+Cool Packages: 
+Auto Filename
+Origami
+
 
