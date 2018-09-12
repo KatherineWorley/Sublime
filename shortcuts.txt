@@ -1,0 +1,8 @@
+This file is to gather short cuts within Sublime. 
+
+Grab Package Control
+Command Shift P
+
+Search Current Folders
+Command P 
+
