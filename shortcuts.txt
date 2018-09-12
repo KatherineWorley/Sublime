@@ -12,3 +12,10 @@ Origami
 
 Fold/Unfold Multiple Lines of Code: 
 Command Option Square Bracket (Left Compresses, Right DeCompresses)
+
+Unfold ALL folded lines of Code: 
+Command K Command J
+
+Folds up all the Tag Attributes for a Link Image. Keeps tag name, folds Attributes: 
+Command K Command T
+
