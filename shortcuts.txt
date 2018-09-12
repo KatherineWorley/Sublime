@@ -10,4 +10,5 @@ Cool Packages:
 Auto Filename
 Origami
 
-
+Fold/Unfold Multiple Lines of Code: 
+Command Option Square Bracket (Left Compresses, Right DeCompresses)
