@@ -19,3 +19,7 @@ Command K Command J
 Folds up all the Tag Attributes for a Link Image. Keeps tag name, folds Attributes: 
 Command K Command T
 
+XML was designed to carry data - with focus on what data is
+HTML was designed to display data - with focus on how data looks
+XML tags are not predefined like HTML tags are
+
