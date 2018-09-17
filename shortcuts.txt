@@ -34,3 +34,8 @@ Jump to the top/bottom of document
 
 Get out of block of code with minimal keystrokes-
 Command return/enter (won't break text or sentence)
+
+Grab ALL of one word - 
+Double click that word
+Command + d will add the next, and the next ... 
+Command + k + d will deselect the one that is added. 
