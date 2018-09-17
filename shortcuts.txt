@@ -20,12 +20,17 @@ Folds up all the Tag Attributes for a Link Image. Keeps tag name, folds Attribut
 Command K Command T
 
 XML was designed to carry data - with focus on what data is
+
 HTML was designed to display data - with focus on how data looks
 XML tags are not predefined like HTML tags are
 
+
 Hop Lines/Words:
 Jump to next word - 
-Option Arrow Keys
+Option Arrow Keys (Add shift to highlight, too)
 
 Option UP/DOWN arrow - 
 Jump to the top/bottom of document
+
+Get out of block of code with minimal keystrokes-
+Command return/enter (won't break text or sentence)
