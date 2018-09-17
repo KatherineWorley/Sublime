@@ -23,5 +23,9 @@ XML was designed to carry data - with focus on what data is
 HTML was designed to display data - with focus on how data looks
 XML tags are not predefined like HTML tags are
 
+Hop Lines/Words:
+Jump to next word - 
+Option Arrow Keys
 
-
+Option UP/DOWN arrow - 
+Jump to the top/bottom of document
