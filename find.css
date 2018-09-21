@@ -17,13 +17,40 @@
 	margin: 0 auto;
 	/*p10*/
 	padding: 10px;
+
 	/*p10-20-30-40*/
 	padding: 10px 20px 30px 40px;
+
 	/*p2r3r4r5r*/
 	padding: 2rem 3rem 4rem 5rem;
+
 	/*bd*/
 	border:
+
 	/*bd1-s-white */
 	border: 1px solid white;
 	
+	/*-trans1s-all*/
+	-webkit-transition: 1s all;
+	-o-transition: 1s all;
+	transition: 1s all;
+
+	/*@kf*/
+	@-webkit-keyframes identifier {
+		from {  }
+		to {  }
+	}
+	@-o-keyframes identifier {
+		from {  }
+		to {  }
+	}
+	@-moz-keyframes identifier {
+		from {  }
+		to {  }
+	}
+	@keyframes identifier {
+		from {  }
+		to {  }
+	}
+
 }
