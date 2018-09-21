@@ -21,4 +21,9 @@
 	padding: 10px 20px 30px 40px;
 	/*p2r3r4r5r*/
 	padding: 2rem 3rem 4rem 5rem;
+	/*bd*/
+	border:
+	/*bd1-s-white */
+	border: 1px solid white;
+	
 }
