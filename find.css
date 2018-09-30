@@ -6,15 +6,13 @@
 .wrapper	{
 	text-decoration: none;
 	overflow: hidden;
-	overflow: hidden;
 	font-style: italic;
 	font-size: 10px;
 	border-radius: 0;
 	text-align: left;
 	width: 0;
-	padding: 110px;
 	margin: 10px;
-	min-height: 100m;
+	min-height: 1m;
 	margin: 0 auto;
 	/*p10*/
 	padding: 10px;
@@ -26,7 +24,7 @@
 	padding: 2rem 3rem 4rem 5rem;
 
 	/*bd*/
-	border:
+	border: 2px;
 
 	/*bd1-s-white */
 	border: 1px solid white;
