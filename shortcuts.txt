@@ -42,3 +42,82 @@ Command + k + d will deselect the one that is added.
 
 From Apple documentation 
 File and directory names traditionally include only letters, numbers, hyphens, the underscore character (_), and often a period (.) followed by a file extension that indicates the type of file (.txt, for example). Most other characters, including space characters, should be avoided because they have special meaning to the shell.
+
+Documentation ArchiveDeveloperSearch
+Shell Scripting Primer
+Companion File Table of Contents
+NextPrevious
+Command Line Primer
+Historically, the command line interface provided a way to manipulate a computer over simple, text-based connections. In the modern era, in spite of the ability to transmit graphical user interfaces over the Internet, the command line remains a powerful tool for performing certain types of tasks.
+
+As described previously in Before You Begin, most users interact with a command-line environment using the Terminal application, though you may also use a remote connection method such as secure shell (SSH). Each Terminal window or SSH connection provides access to the input and output of a shell process. A shell is a special command-line tool that is designed specifically to provide text-based interactive control over other command-line tools.
+
+In addition to running individual tools, most shells provide some means of combining multiple tools into structured programs, called shell scripts (the subject of this book).
+
+Different shells feature slightly different capabilities and scripting syntax. Although you can use any shell of your choice, the examples in this book assume that you are using the standard OS X shell. The standard shell is bash if you are running OS X v10.3 or later and tcsh if you are running an earlier version of the operating system.
+
+The following sections provide some basic information and tips about using the command-line interface more effectively; they are not intended as an exhaustive reference for using the shell environments.
+
+Note: This appendix was originally part of Mac Technology Overview.
+
+Basic Shell Concepts
+Before you start working in any shell environment, there are some basic features of shell scripting that you should understand. Some of these features are specific to OS X, but most are common to all platforms that support shell scripting.
+
+Running Your First Command-Line Tool
+In general, you run command-line tools that OS X provides by typing the name of the tool. (The syntax for running tools that you’ve added is described later in this appendix.)
+
+For example, if you run the ls command, by default, it lists the files in your home directory. To run this command, type ls and press Return.
+
+Most tools also can take a number of flags (sometimes called switches). For example, you can get a “long” file listing (with additional information about every file) by typing ls -l and pressing Return. The -l flag tells the ls command to change its default behavior.
+
+Similarly, most tools take arguments. For example, to show a long listing of the files on your OS X desktop, type ls -l Desktop and press Return. In that command, the word Desktop is an argument that is the name of the folder that contains the contents of your OS X desktop.
+
+In addition, some tools have flags that take flag-specific arguments in addition to the main arguments to the tool as a whole.
+
+Specifying Files and Directories
+Most commands in the shell operate on files and directories, the locations of which are identified by paths. The directory names that make up a path are separated by forward-slash characters. For example, the Terminal program is in the Utilities folder within the Applications folder at the top level of your hard drive. Its path is /Applications/Utilities/Terminal.app.
+
+The shell (along with, for that matter, all other UNIX applications and tools) also has a notion of a current working directory. When you specify a filename or path that does not start with a slash, that path is assumed to be relative to this directory. For example, if you type cat foo, the cat command prints the contents of the file foo in the current directory. You can change the current directory using the cd command.
+
+Finally, the shell supports a number of directory names that have a special meaning.
+
+Table A-1 lists some of the standard shortcuts used to represent specific directories in the system. Because they are based on context, these shortcuts eliminate the need to type full paths in many situations.
+
+Table A-1  Special path characters and their meaning
+Path string
+
+Description
+
+.
+
+The . directory (single period) is a special directory that, when accessed, points to the current working directory. This value is often used as a shortcut to eliminate the need to type in a full path when running a command.
+
+For example, if you type ./mytool and press return, you are running the mytool command in the current directory (if such a tool exists).
+
+..
+
+The .. directory (two periods) is a special directory that, when accessed, points to the directory that contains the current directory (called its parent directory). This directory is used for navigating up one level towards the top of the directory hierarchy.
+
+For example, the path ../Test is a file or directory (named Test) that is a sibling of the current directory.
+
+Note: Depending on the shell, if you follow a symbolic link into a subdirectory, typing cd .. directory will either take you back to the directory you came from or will take you to the parent of the current directory.
+
+~ or $HOME
+
+At the beginning of a path, the tilde character represents the home directory of the specified user, or the currently logged in user if no user is specified. (Unlike . and .., this is not an actual directory, but a substitution performed by the shell.)
+
+For example, you can refer to the current user’s Documents folder as ~/Documents. Similarly, if you have another user whose short name is frankiej, you could access that user’s Documents folder as ~frankiej/Documents (if that user has set permissions on his or her Documents directory to allow you to see its contents).
+
+The $HOME environment variable can also be used to represent the current user’s home directory.
+
+In OS X, the user’s home directory usually resides in the /Users directory or on a network server.
+
+File and directory names traditionally include only letters, numbers, hyphens, the underscore character (_), and often a period (.) followed by a file extension that indicates the type of file (.txt, for example). Most other characters, including space characters, should be avoided because they have special meaning to the shell.
+
+Although some OS X file systems permit the use of these other characters, including spaces, you must do one of the following:
+
+“Escape” the character—put a backslash character (\) immediately before the character in the path.
+Add single or double quotation marks around the path or the portion that contains the offending characters.
+For example, the path name My Disk can be written as "My Disk", 'My Disk', or My\ Disk.
+
+Single quotes are safer than double quotes because the shell does not do any interpretation of the contents of a single-quoted string. However, double quotes are less likely to appear in a filename, making them slightly easier to use. When in doubt, use a backslash before the character in question, or two backslashes to represent a literal backslash
